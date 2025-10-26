@@ -127,6 +127,9 @@ document.addEventListener('DOMContentLoaded', function() {
             proj1Desc: "一个展示个人作品、学习笔记和生活足迹的响应式网站。实现了亮色/暗色模式、中英文切换、动态交互等功能，注重设计细节和用户体验。",
             proj2Title: "协作式数据分析平台",
             proj2Desc: "一个允许多人实时在线协作处理和可视化数据的Web应用。我主要负责前端架构设计和核心可视化组件的开发，实现了画布拖拽、实时同步等复杂功能。",
+            navArchives: "笔记",
+            archivesTitle: "笔记归档",
+            archivesDesc: "所有思考与学习的沉淀",
         },
         en: {
             pageTitle: "Miao's World",
@@ -195,6 +198,9 @@ document.addEventListener('DOMContentLoaded', function() {
             proj1Desc: "A responsive website to showcase personal projects, study notes, and life footprints. Features include dark/light mode, EN/ZH language switching, dynamic interactions, with a focus on design details and user experience.",
             proj2Title: "Collaborative Data Analysis Platform",
             proj2Desc: "A web application that allows multiple users to process and visualize data in real-time collaboration. I was mainly responsible for the frontend architecture design and the development of core visualization components, implementing complex features like canvas drag-and-drop and real-time synchronization.",
+            navArchives: "Archives",
+            archivesTitle: "Note Archives",
+            archivesDesc: "A collection of all thoughts and studies.",
         }
     };
     const langLinks = document.querySelectorAll('.nav-language a');

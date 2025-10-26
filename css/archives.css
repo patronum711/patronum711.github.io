@@ -1,0 +1,141 @@
+/* --- 归档页 (Archives) 和文章页 (Post) 专属样式 --- */
+
+/* --- 通用容器 --- */
+.archive-container,
+.post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px 2rem 60px;
+}
+
+/* --- 归档页样式 --- */
+.archive-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.archive-header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.archive-header p {
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+}
+
+.archive-timeline {
+    position: relative;
+}
+
+.archive-year-marker {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem;
+}
+
+.archive-item {
+    display: flex;
+    align-items: baseline;
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed var(--border-color);
+    transition: background-color 0.3s ease;
+}
+.archive-item:hover {
+    background-color: var(--section-background-color);
+}
+
+.archive-date {
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+    width: 60px;
+    flex-shrink: 0;
+}
+
+.archive-title {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.archive-title:hover {
+    color: var(--link-color);
+}
+
+/* --- 文章详情页样式 --- */
+.post-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.post-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+.post-meta {
+    font-size: 0.9rem;
+    color: var(--secondary-text-color);
+}
+
+.post-body {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Markdown 元素样式 */
+.post-body h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.post-body h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1rem;
+}
+.post-body p {
+    margin-bottom: 1.2rem;
+}
+.post-body a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--link-color);
+}
+.post-body a:hover {
+    opacity: 0.8;
+}
+.post-body ul, .post-body ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.post-body li {
+    margin-bottom: 0.5rem;
+}
+.post-body blockquote {
+    border-left: 4px solid var(--link-color);
+    padding-left: 1rem;
+    margin: 2rem 0;
+    color: var(--secondary-text-color);
+}
+.post-body pre, .post-body code {
+    font-family: 'Menlo', 'Consolas', monospace;
+}
+.post-body pre {
+    background-color: var(--section-background-color);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+.post-body p > code, .post-body li > code {
+    background-color: var(--section-background-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
