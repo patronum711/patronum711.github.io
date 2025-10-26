@@ -1,0 +1,283 @@
+/* --- 简历页面专属样式 --- */
+
+/* --- 主体布局 --- */
+.resume-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 120px 2rem 60px; /* 顶部padding为导航栏留出空间 */
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 4rem;
+}
+
+/* --- 左侧边栏 --- */
+.resume-sidebar {
+    position: sticky;
+    top: 120px; /* 粘性定位的起始位置 */
+    align-self: start; /* 保证它从顶部开始粘性 */
+    height: calc(100vh - 150px);
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    border-radius: 8px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+.sidebar-nav a:hover {
+    color: var(--primary-text-color);
+    background-color: var(--section-background-color);
+}
+
+.sidebar-nav a.active {
+    color: var(--primary-text-color);
+    background-color: var(--section-background-color);
+}
+
+/* --- 右侧内容区 --- */
+.resume-section {
+    padding-top: 20px; /* 为锚点跳转留出一点缓冲 */
+    margin-bottom: 4rem;
+    scroll-margin-top: 100px; /* 关键：确保锚点跳转时，标题不会被导航栏遮挡 */
+}
+
+.resume-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.8rem;
+}
+
+/* 1. 关于区域 */
+.about-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--background-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.my-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+.my-title {
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    margin: 0.25rem 0 0.5rem;
+}
+.contact-info {
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+}
+.contact-info a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* AI聊天框 */
+.ai-chat-box {
+    background-color: var(--section-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.chat-header {
+    padding: 0.8rem 1.2rem;
+    font-weight: 500;
+    background-color: var(--card-background-color);
+    border-bottom: 1px solid var(--border-color);
+}
+.chat-body {
+    padding: 1.2rem;
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+}
+.chat-footer {
+    display: flex;
+    padding: 0.5rem;
+    border-top: 1px solid var(--border-color);
+}
+.chat-footer input {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    padding: 0.5rem 0.8rem;
+    color: var(--primary-text-color);
+}
+.chat-footer input:focus {
+    outline: none;
+}
+.chat-footer button {
+    background-color: var(--link-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.chat-footer button:hover { opacity: 0.8; }
+
+/* 2. 时间线 (教育) */
+.timeline {
+    border-left: 2px solid var(--border-color);
+    padding-left: 2rem;
+}
+.timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.7rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--secondary-text-color);
+    border: 2px solid var(--background-color);
+}
+.timeline-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.timeline-meta {
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0.8rem;
+}
+.timeline-desc {
+    line-height: 1.7;
+}
+
+/* 3. 技能 */
+.skills-grid {
+    display: grid;
+    gap: 2rem;
+}
+.skill-category h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+.skill-tags span {
+    background-color: var(--section-background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+.skill-tags span:hover {
+    border-color: var(--link-color);
+    color: var(--link-color);
+}
+
+/* 4. 获奖 */
+.awards-list {
+    list-style: none;
+    padding-left: 1rem;
+}
+.awards-list li {
+    padding: 0.5rem 0;
+    position: relative;
+}
+.awards-list li::before {
+    content: '🏆';
+    position: absolute;
+    left: -1.5rem;
+}
+
+/* 5. 项目 */
+.project-list {
+    display: grid;
+    gap: 1.5rem;
+}
+.project-card {
+    background-color: var(--card-background-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--card-shadow-color);
+}
+.project-card h3 { font-size: 1.25rem; font-weight: 600; }
+.project-meta {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.5rem 0 1rem;
+}
+.project-meta span {
+    background-color: var(--section-background-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.project-desc {
+    color: var(--secondary-text-color);
+    margin-bottom: 1rem;
+}
+.project-links a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* --- 响应式设计 --- */
+@media (max-width: 992px) {
+    .resume-container {
+        grid-template-columns: 1fr;
+    }
+    .resume-sidebar {
+        position: static;
+        height: auto;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+    .sidebar-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}

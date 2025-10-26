@@ -1,194 +1,150 @@
 <!DOCTYPE html>
+<!-- JS会根据用户偏好添加 'dark-mode' -->
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexo</title>
-    <style>
-        /* 基础样式 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* 头部样式 */
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .site-title {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-        
-        .site-description {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-        }
-        
-        /* 导航样式 */
-        .nav {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-        
-        .nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #3498db;
-            font-weight: 500;
-        }
-        
-        .nav a:hover {
-            color: #2980b9;
-        }
-        
-        /* 文章列表样式 */
-        .post {
-            background: white;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .post-title {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-        
-        .post-title a {
-            text-decoration: none;
-            color: #2c3e50;
-        }
-        
-        .post-meta {
-            color: #95a5a6;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-        }
-        
-        .post-excerpt {
-            margin-bottom: 15px;
-        }
-        
-        .read-more {
-            display: inline-block;
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        /* 页脚样式 */
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #95a5a6;
-            font-size: 0.9rem;
-        }
-        
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            
-            .site-title {
-                font-size: 2rem;
-            }
-            
-            .post {
-                padding: 15px;
-            }
-        }
-    </style>
-<meta name="generator" content="Hexo 8.0.0"></head>
-<body>
-    <header class="header">
-        <h1 class="site-title">Hexo</h1>
-        <p class="site-description"></p>
-    </header>
+    <title>Miao's World</title>
+    <!-- 引入通用样式 -->
     
-    <nav class="nav">
-        <a href="/">首页</a>
-        <a href="/archives">归档</a>
-        <a href="/about">关于</a>
-    </nav>
-    
-    <main>
-        
-            <article class="post">
-                <h2 class="post-title">
-                    <a href="/2025/10/26/miao/">miao</a>
-                </h2>
-                <div class="post-meta">
-                    2025年10月26日 • 
-                    
-                </div>
-                <div class="post-excerpt">
-                    
-                        
-                    
-                </div>
-                <a href="/2025/10/26/miao/" class="read-more">阅读更多 →</a>
-            </article>
-        
-            <article class="post">
-                <h2 class="post-title">
-                    <a href="/2025/10/26/test-blog/">test blog</a>
-                </h2>
-                <div class="post-meta">
-                    2025年10月26日 • 
-                    
-                </div>
-                <div class="post-excerpt">
-                    
-                        你好
+<link rel="stylesheet" href="/css/style.css">
 
-                    
-                </div>
-                <a href="/2025/10/26/test-blog/" class="read-more">阅读更多 →</a>
-            </article>
-        
-            <article class="post">
-                <h2 class="post-title">
-                    <a href="/2025/10/26/hello-world/">Hello World</a>
-                </h2>
-                <div class="post-meta">
-                    2025年10月26日 • 
-                    
-                </div>
-                <div class="post-excerpt">
-                    
-                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-                    
-                </div>
-                <a href="/2025/10/26/hello-world/" class="read-more">阅读更多 →</a>
-            </article>
-        
-    </main>
+    <!-- 如果是简历页，额外引入简历样式 -->
     
-    <footer class="footer">
-        <p>&copy; 2025 Hexo. Powered by Hexo.</p>
-    </footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 8.0.0"></head>
+<!-- 根据页面类型添加 class -->
+<body class="">
+
+<!-- 动态生成导航栏 -->
+<header id="main-header" class="">
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="/" data-lang-key="navLogo">Miao's World</a>
+        </div>
+        <ul class="nav-menu">
+            
+                <li><a href="/" class="" data-lang-key="navHome">Home</a></li>
+            
+                <li><a href="/resume/" class="" data-lang-key="navResume">Resume</a></li>
+            
+        </ul>
+        <div class="nav-controls">
+            <div class="nav-language">
+                <a href="#" data-lang="zh" class="lang-active">中文</a> / <a href="#" data-lang="en">English</a>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 010 1.06l-1.591 1.591a.75.75 0 11-1.06-1.06l1.591-1.591a.75.75 0 011.06 0zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM17.803 17.803a.75.75 0 01-1.06 0l-1.591-1.591a.75.75 0 111.06-1.06l1.591 1.591a.75.75 0 010 1.06zM12 21a.75.75 0 01-.75-.75v-2.25a.75.75 0 011.5 0v2.25a.75.75 0 01-.75.75zM5.197 17.803a.75.75 0 010-1.06l1.591-1.591a.75.75 0 111.06 1.06l-1.591 1.591a.75.75 0 01-1.06 0zM3 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3.75A.75.75 0 013 12zM6.106 5.197a.75.75 0 011.06 0l1.591 1.591a.75.75 0 11-1.06 1.06L6.106 6.257a.75.75 0 010-1.06z"/></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.981A10.503 10.503 0 0118 18a10.5 10.5 0 01-10.5-10.5c0-1.25.223-2.45.635-3.572a.75.75 0 01.819-.162z" clip-rule="evenodd"/></svg>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- 主体内容会被注入到这里 -->
+<section class="hero-section">
+    <div id="cursor-light"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title" data-lang-key="heroTitle">欢迎来到Miao的世界</h1>
+        <p id="dynamic-subtitle" class="fade-in-element"></p>
+    </div>
+    <a href="#about-section" class="scroll-down-indicator">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V20M12 20L18 14M12 20L6 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</section>
+
+<section id="about-section" class="content-section">
+    <div class="container fade-in-element">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="/image/profile.jpg" alt="Miao's Profile Photo">
+            </div>
+            <div class="about-text">
+                <h2 data-lang-key="aboutTitle">关于我</h2>
+                <p data-lang-key="aboutDesc">你好，我是Miao。一名热衷于探索技术与设计的开发者/设计师/创造者。我相信代码可以构建世界，而设计赋予其灵魂。在这里，我记录下我的思考、创造与脚步，希望与你分享这份旅程。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hobbies-section" class="content-section">
+    <div class="container fade-in-element">
+        <h2 class="section-title" data-lang-key="hobbiesTitle">兴趣与热情</h2>
+        <div class="hobbies-grid">
+            <div class="hobby-item">
+                <div class="hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" /></svg>
+                </div>
+                <h3 data-lang-key="musicTitle">音乐</h3>
+                <p data-lang-key="musicDesc">赵雷, 王菲, Taylor Swift, Lorde, Billie Eilish, Kendrick Lamar</p>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
+                </div>
+                <h3 data-lang-key="travelTitle">旅行</h3>
+                <p><a href="#" data-lang-key="travelDesc">探索世界的脚步 &rarr;</a></p>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.776 48.776 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" /><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" /></svg>
+                </div>
+                <h3 data-lang-key="photoTitle">摄影</h3>
+                <p><a href="#" data-lang-key="photoDesc">捕捉光影的瞬间 &rarr;</a></p>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-3.75-2.25M21 12l-3.75 2.25" /></svg>
+                </div>
+                <h3 data-lang-key="investTitle">价值投资</h3>
+                <p><a href="#" data-lang-key="investDesc">阅读相关的思考 &rarr;</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="preview-section" class="content-section">
+    <div class="container fade-in-element">
+        <div class="preview-grid">
+            <div class="card">
+                <img src="/image/project.jpg" alt="项目预览">
+                <div class="card-content">
+                    <h3 data-lang-key="projectTitle">我的项目</h3>
+                    <p data-lang-key="projectDesc">从代码到产品，这里是我将想法变为现实的地方。</p>
+                    <a href="#" class="card-link" data-lang-key="projectLink">了解更多 &rarr;</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/image/notes.jpg" alt="笔记预览">
+                <div class="card-content">
+                    <h3 data-lang-key="notesTitle">精选笔记</h3>
+                    <p data-lang-key="notesDesc">记录学习的点滴，沉淀知识的深度与广度。</p>
+                    <a href="#" class="card-link" data-lang-key="notesLink">开始阅读 &rarr;</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/image/travel.jpg" alt="足迹预览">
+                <div class="card-content">
+                    <h3 data-lang-key="footprintsTitle">我的足迹</h3>
+                    <p data-lang-key="footprintsDesc">用镜头和文字，捕捉世界每个角落的精彩瞬间。</p>
+                    <a href="#" class="card-link" data-lang-key="footprintsLink">探索世界 &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 引入通用JS -->
+
+<script src="/js/main.js"></script>
+
+<!-- 如果是简历页，额外引入简历JS -->
+
+
 </body>
 </html>

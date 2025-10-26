@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- JS会根据用户偏好添加 'dark-mode' -->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Miao's World</title>
+    <!-- 引入通用样式 -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- 如果是简历页，额外引入简历样式 -->
+    
+        
+<link rel="stylesheet" href="/css/resume.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 8.0.0"></head>
+<!-- 根据页面类型添加 class -->
+<body class="resume-page">
+
+<!-- 动态生成导航栏 -->
+<header id="main-header" class="scrolled">
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="/" data-lang-key="navLogo">Miao's World</a>
+        </div>
+        <ul class="nav-menu">
+            
+                <li><a href="/" class="" data-lang-key="navHome">Home</a></li>
+            
+                <li><a href="/resume/" class="active" data-lang-key="navResume">Resume</a></li>
+            
+        </ul>
+        <div class="nav-controls">
+            <div class="nav-language">
+                <a href="#" data-lang="zh" class="lang-active">中文</a> / <a href="#" data-lang="en">English</a>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 010 1.06l-1.591 1.591a.75.75 0 11-1.06-1.06l1.591-1.591a.75.75 0 011.06 0zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM17.803 17.803a.75.75 0 01-1.06 0l-1.591-1.591a.75.75 0 111.06-1.06l1.591 1.591a.75.75 0 010 1.06zM12 21a.75.75 0 01-.75-.75v-2.25a.75.75 0 011.5 0v2.25a.75.75 0 01-.75.75zM5.197 17.803a.75.75 0 010-1.06l1.591-1.591a.75.75 0 111.06 1.06l-1.591 1.591a.75.75 0 01-1.06 0zM3 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3.75A.75.75 0 013 12zM6.106 5.197a.75.75 0 011.06 0l1.591 1.591a.75.75 0 11-1.06 1.06L6.106 6.257a.75.75 0 010-1.06z"/></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.981A10.503 10.503 0 0118 18a10.5 10.5 0 01-10.5-10.5c0-1.25.223-2.45.635-3.572a.75.75 0 01.819-.162z" clip-rule="evenodd"/></svg>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- 主体内容会被注入到这里 -->
+<main class="resume-container">
+    <aside class="resume-sidebar">
+        <ul class="sidebar-nav">
+            <li><a href="#about" class="active" data-lang-key="sidebarAbout">关于</a></li>
+            <li><a href="#education" data-lang-key="sidebarEducation">教育</a></li>
+            <li><a href="#skills" data-lang-key="sidebarSkills">技能</a></li>
+            <li><a href="#awards" data-lang-key="sidebarAwards">获奖</a></li>
+            <li><a href="#projects" data-lang-key="sidebarProjects">项目</a></li>
+        </ul>
+    </aside>
+
+    <div class="resume-content">
+        <section id="about" class="resume-section">
+            <div class="about-header">
+                <img src="/image/profile.jpg" alt="个人头像" class="avatar">
+                <div class="about-info">
+                    <h1 class="my-name" data-lang-key="myName">Miao</h1>
+                    <p class="my-title" data-lang-key="myTitle">前端开发者 & UI/UX 设计师</p>
+                    <div class="contact-info">
+                        <span data-lang-key="myLocation">中国, 上海</span>
+                        <span>&middot;</span>
+                        <a href="mailto:your.email@example.com" data-lang-key="myEmail">your.email@example.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-chat-box">
+                <div class="chat-header" data-lang-key="chatHeader">与我的 AI 分身聊聊</div>
+                <div class="chat-body">
+                    <p class="chat-placeholder" data-lang-key="chatPlaceholder">你好！想了解 Miao 的更多信息吗？比如他的项目经验或技术栈？请在这里问我吧！</p>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" data-lang-key-placeholder="chatInputPlaceholder" placeholder="输入您的问题...">
+                    <button data-lang-key="chatSend">发送</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="resume-section">
+            <h2 data-lang-key="educationTitle">教育背景</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3 data-lang-key="edu1Degree">计算机科学与技术硕士</h3>
+                    <p class="timeline-meta"><span data-lang-key="edu1School">某某大学</span> | <span data-lang-key="edu1Date">2022 - 2025</span></p>
+                    <p class="timeline-desc" data-lang-key="edu1Desc">主修方向：人机交互、数据可视化。以 GPA 3.9/4.0 的成绩毕业。毕业设计是关于构建一个基于 Web 的协作式数据分析平台。</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 data-lang-key="edu2Degree">软件工程学士</h3>
+                    <p class="timeline-meta"><span data-lang-key="edu2School">某某大学</span> | <span data-lang-key="edu2Date">2018 - 2022</span></p>
+                    <p class="timeline-desc" data-lang-key="edu2Desc">多次获得校级奖学金。活跃于开源社区，为多个项目贡献了代码。担任过院系技术部部长。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="resume-section">
+            <h2 data-lang-key="skillsTitle">专业技能</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-lang-key="skillsCat1">编程与技术</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript (ES6+)</span><span>TypeScript</span><span>React.js</span><span>Vue.js</span><span>Node.js</span><span>HTML5</span><span>CSS3 & Sass</span><span>Webpack</span><span>Git</span><span>Docker</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-lang-key="skillsCat2">设计与工具</h3>
+                    <div class="skill-tags">
+                        <span>UI/UX 设计</span><span>Figma</span><span>Sketch</span><span>Adobe XD</span><span>Prototyping</span><span>Design Systems</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-lang-key="skillsCat3">语言</h3>
+                    <div class="skill-tags">
+                        <span data-lang-key="langCN">中文 (母语)</span><span data-lang-key="langEN">英语 (专业工作水平, CET-6)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="resume-section">
+            <h2 data-lang-key="awardsTitle">获奖情况</h2>
+            <ul class="awards-list">
+                <li data-lang-key="award1">国家奖学金 (Top 1%) - 2021</li>
+                <li data-lang-key="award2">全国大学生“挑战杯”竞赛省级金奖 - 2020</li>
+                <li data-lang-key="award3">某某公司 Hackathon 竞赛优胜奖 - 2019</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="resume-section">
+            <h2 data-lang-key="projectsTitle">项目经历</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3 data-lang-key="proj1Title">个人作品集网站 (Miao's World)</h3>
+                    <p class="project-meta"><span>React</span><span>CSS3</span><span>JavaScript</span></p>
+                    <p class="project-desc" data-lang-key="proj1Desc">一个展示个人作品、学习笔记和生活足迹的响应式网站。实现了亮色/暗色模式、中英文切换、动态交互等功能，注重设计细节和用户体验。</p>
+                    <div class="project-links"><a href="#">查看详情 &rarr;</a></div>
+                </div>
+                <div class="project-card">
+                    <h3 data-lang-key="proj2Title">协作式数据分析平台</h3>
+                    <p class="project-meta"><span>Vue.js</span><span>TypeScript</span><span>Node.js</span><span>WebSocket</span></p>
+                    <p class="project-desc" data-lang-key="proj2Desc">一个允许多人实时在线协作处理和可视化数据的Web应用。我主要负责前端架构设计和核心可视化组件的开发，实现了画布拖拽、实时同步等复杂功能。</p>
+                    <div class="project-links"><a href="#">查看详情 &rarr;</a></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- 引入通用JS -->
+
+<script src="/js/main.js"></script>
+
+<!-- 如果是简历页，额外引入简历JS -->
+
+    
+<script src="/js/resume.js"></script>
+
+
+
+</body>
+</html>
